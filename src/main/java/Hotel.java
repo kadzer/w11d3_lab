@@ -16,5 +16,29 @@ public class Hotel {
     public String getName() {
         return name;
     }
+
+    public int countBedrooms() {
+        return this.bedrooms.size();
+    }
+
+    public void addBedroom(Bedroom bedroom) {
+        this.bedrooms.add(bedroom);
+    }
+
+    public int countConferenceRooms() {
+        return this.conferenceRooms.size();
+    }
+
+    public void addConferenceRoom(ConferenceRoom conferenceRoom) {
+        this.conferenceRooms.add(conferenceRoom);
+    }
+
+    public void checkIntoBedroom(Bedroom bedroom, Guest guest) {
+        bedroom.addGuests(guest);
+    }
+
+    public void checkOutOfBedroom(Bedroom bedroom, Guest guest) {
+        bedroom.checkoutGuest(guest);
+    }
 }
 
