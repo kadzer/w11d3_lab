@@ -17,4 +17,9 @@ public class HotelTest {
     public void returnsName() {
         assertEquals("Grand Budapest Hotel", hotel.getName());
     }
+
+//    @Test
+//    public void canCheckInGuests() {
+//        assertEquals();
+//    }
 }
