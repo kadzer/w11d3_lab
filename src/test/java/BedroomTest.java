@@ -67,6 +67,8 @@ public class BedroomTest {
         assertEquals(0, bedroom.countGuests());
     }
 
+//    this test may not be necessary - ArrayList size cannot be negative
+
     @Test
     public void cannotRemoveGuestsIfEmpty() {
         bedroom.checkoutGuest(guest);

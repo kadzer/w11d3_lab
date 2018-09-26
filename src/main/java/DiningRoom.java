@@ -12,4 +12,22 @@ public class DiningRoom {
     public int getCapacity() {
         return capacity;
     }
+
+    public int countGuests() {
+        return this.guests.size();
+    }
+
+    public void addGuest(Guest guest) {
+        if (!isFull()) {
+            this.guests.add(guest);
+        }
+    }
+
+    public boolean isFull() {
+        return countGuests() == getCapacity();
+    }
+
+    public void removeGuest(Guest guest) {
+        this.guests.remove(guest);
+    }
 }
